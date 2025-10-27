@@ -29,26 +29,26 @@
     <div class="container-fluid" style="background-color: #bbb9b2;">
         <div class="row text-center text-light mb-3 ms-3 me-3 p-3 rounded-4" style="background-color: #524848;">
 
-            <div class="col-4" style="text-align: left;">
+            <div class="col-sm-4 col-md-4 col-lg-4 p-2" style="text-align: left;">
                 <h3>Redmi Note 14 Pro 5G</h3>
             </div>
-            <div class="col-4 mt-3">
+            <div class="col-sm-4 col-md-4 col-lg-4 mt-3">
                 <ul class="nav-item">
                     <a class="nav-link" href="index.html">Specifications</a>
                 </ul>
             </div>
-            <div class="col-4 mt-3" onclick="showFeats()" style="cursor: pointer;">
+            <div class="col-sm-4 col-md-4 col-lg-4 mt-3" onclick="showFeats()" style="cursor: pointer;">
                 <ul class="nav-item">
                     <a class="nav-link">Features</a>
                 </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-5">
+            <div class="col-sm-3 col-md-4 col-lg-5">
                 <img src="https://i03.appmifile.com/554_item_in/09/12/2024/62494a7f99233f5bc780985b0c5b35c5.png"
                     alt="Redmi Note 14 Pro 5G" class="img-fluid" style="width: 92%;">
             </div>
-            <div class="col-7 pt-5 pl-2" id="content">
+            <div class="col-sm-4 col-md-5 col-lg-7 pt-5 pl-2" id="content">
                 <b>Display</b>: 6.67" AMOLED, 120Hz refresh rate<br><br>
 
                 <b>Processor</b>: Snapdragon 7s Gen 2 (5G)<br><br>
@@ -75,10 +75,8 @@
     <script>
 
         function showFeats() {
-            isItClicked = true;
-            if (isItClicked) {
-                var feats = document.getElementById("content");
-                feats.innerHTML = `
+            var feats = document.getElementById("content");
+            feats.innerHTML = `
             <b>Ultra-Clear 200MP Camera</b> — capture every detail like a pro.<br><br>
 
             <b>Smooth 120Hz AMOLED Display</b> — enjoy vivid and fluid visuals.<br><br>
@@ -93,7 +91,6 @@
 
             <b>Reliable 5G Connection</b> — lightning-fast internet anywhere.<br><br>
             `;
-            }
         };
     </script>
 
